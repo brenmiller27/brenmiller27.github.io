@@ -50,7 +50,7 @@ header nav ul a {
 
 header nav {
 
-    margin: 1 1 1;
+    margin: 1 1 1 auto;
     font-family: 'Noto sans' , sans-serif;
     background-color: #151515;
     width: 100%;
@@ -75,7 +75,6 @@ nav a{
     font-family: var(--heading-font);
     font-size: 1rem;
     text-align: center ;
-    border-si;
 }
 
   nav a :hover {
@@ -150,7 +149,6 @@ footer{
 }
 
 .grid {
-    margin-top: 0 auto;
     display: flex;
     align-items: center;
 }
