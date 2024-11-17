@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    max-width: 960px;
+    padding: 20px;
+    background-color: #92DCE5;
+
+}
+
+@font-face {
+    font-family:'Noto sans';
+    src: url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    ;
+}
+
+
+:root {
+    --primary-color: #D64933 ;
+    --secondary-color: #EEE5E9;
+    --accent1-color: #000000;
+    --accent2-color: #92DCE5;
+
+    --heading-font:'Noto san',serif ;
+    --paragraph-font:'inconsolata',serif ;
+
+    --nav-background-color:#524948;
+    --nav-link-color:#70F8BA;
+    --nav-hover-link-color:#CAFE48;
+    --nav-hover-background-color:#7CB4B8;
+  
+}
+
+body {
+    background-color: var(--nav-link-color) ;
+    font-size: medium;
+    font-family: 'Noto sans' , sans-serif;
+    margin: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul a {
+    font-family: 'Noto sans' , sans-serif;
+    justify-content: space-around;
+    
+
+}
+
+header nav {
+
+    margin: 1 1 1;
+    font-family: 'Noto sans' , sans-serif;
+    background-color: #151515;
+    width: 100%;
+    font-size: 1.5rem;
+  
+    padding: 30px;
+
+}
+
+nav a{
+    color: var(--nav-hover-link-color) ;
+    font-family: 'Noto sans' , sans-serif;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+}
+
+.box nav a {
+
+    color: var(--nav-hover-link-color) ;
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    text-align: center ;
+    border-si;
+}
+
+  nav a :hover {
+
+    color: #D643;
+    border: 1px solid #fff;
+}
+
+header nav {
+    
+    position: relative;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    max-width: 800px;
+
+
+}
+header , footer {
+    display: flex;
+    background-color: var(--accent1-color); 
+    text-align: center;
+    flex-direction: column;
+    max-width: 2000px;
+    padding: 2em
+
+}
+
+footer{
+    color: var(--accent2-color);
+    font-size: large;
+}
+
+.Card img {
+        width: 300px;
+        margin-bottom: auto;
+        margin-right: 400px;
+        margin: auto;
+
+    
+}
+
+.box {
+
+    padding: 25rem ;
+    color: var(--accent2-color);
+    background-color: #000000;
+    border: #000000;
+    height: 28rem;
+    padding: 2rem;
+    border: 1px solid #000000 ;
+    position: relative ;
+    width: 30em ;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center
+
+}
+
+
+.Card p {
+    
+    color: var(--nav-link-color);
+    margin-top: 40px;
+    font-size: large;
+    
+}
+
+.Card h1 {
+    border-bottom: #70F8BA;
+    border-bottom: 1px solid #92DCE5;
+}
+
+.grid {
+    margin-top: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+header h1 {
+    color: var(--nav-link-color);
+   
+}
+
+aside a {
+    color : #70F8BA
+}
+.Card{
+    padding: 25rem ;
+    color: var(--nav-link-color);
+    background-color: #000000;
+    border: #000000;
+    height: 28rem;
+    padding: 2rem;
+    border: 1px solid #000000 ;
+    position: relative ;
+    width: 40em ;
+    text-align: center;
+}
+
+.Card h1{
+    display: flex;
+    color: #70F8BA;
+    text-align: center;
+    margin-left: 150px;
+}
+
+@media (min-width: 640px) {
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
