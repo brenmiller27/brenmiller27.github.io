@@ -1,18 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    max-width: 960px;
-    padding: 20px;
-    background-color: #92DCE5;
-
-}
-
-@font-face {
-    font-family:'Noto sans';
-    src: url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-    ;
-}
-
 
 :root {
     --primary-color: #D64933 ;
