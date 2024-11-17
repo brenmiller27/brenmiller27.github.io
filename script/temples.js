@@ -1,3 +1,11 @@
+function lastModified() {
+
+    document.write(document.lastModified);
+}
+
+lastModified();
+
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
