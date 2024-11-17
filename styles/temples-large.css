@@ -14,7 +14,6 @@ div {
 div img {
     box-shadow: 4px 7px 7px 0px #000;
     cursor: pointer;
-    border: 0.5 solid #004;
     transition: 400ms;
     border-radius: 13px ;
 }
@@ -28,7 +27,7 @@ div img:hover {
 figcaption {
     margin-top: 20px;
     text-align: center;
-    font-family: 'Noto sans', ;
+    font-family: 'Noto sans', sans-serif ;
 }
 
 footer {
