@@ -1,9 +1,3 @@
-function lastModified() {
-
-    document.write(document.lastModified);
-}
-
-lastModified();
 
 
 const hamburger = document.querySelector(".hamburger");
@@ -15,7 +9,7 @@ hamburger.addEventListener("click", ()  => {
 })
 
 document.querySelectorAll('.nav-link').forEach(n => n.
-    addEventListener("click", () => {
+addEventListener("click", () => {
       hamburger.classlist.remove("active");
       navMenu.classlist.remove("active");
     
