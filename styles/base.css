@@ -36,6 +36,7 @@ header nav a {
 
 ul {
     flex-direction: column;
+    align-items: center;
 }
 
 header nav {
@@ -155,7 +156,7 @@ footer{
 .grid {
     display: flex;
     align-items: center;
-    grid-column: (repeat 3, 1f);
+    grid-column: repeat (3, 1f);
 }
 
 main{
