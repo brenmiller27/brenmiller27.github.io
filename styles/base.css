@@ -1,3 +1,7 @@
+*{
+    margin: 5 auto;
+    padding: 10px
+}
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
@@ -22,52 +26,62 @@ body {
     background-color: var(--nav-link-color) ;
     font-size: medium;
     font-family: 'Noto sans' , sans-serif;
-    margin: auto;
+    margin: 0;
 }
 
-header nav ul {
+a:hover {
+    background-color: hsl(0, 0, 10%);
+}
+header nav a {
+    justify-content: space-between;
     list-style-type: none;
+    padding: 45px;
 }
 
-header nav ul a {
-    font-family: 'Noto sans' , sans-serif;
-    justify-content: space-around;
-    
-
-}
 
 header nav {
 
+
+    background-color: hsl(0, 0, 25%);
+
     font-family: 'Noto sans' , sans-serif;
-    background-color: #151515;
     width: 100%;
+    margin: 0;
+    padding: 0;
     font-size: 1.5rem;
-  
-    padding: 30px;
+    padding: 40px;
 
 }
 
-nav a{
+ a:hover {
+    color:aqua ;
+}
+
+ nav a{
     color: var(--nav-hover-link-color) ;
     font-family: 'Noto sans' , sans-serif;
+    flex-direction: column;
     text-align: center;
-    text-decoration: none;
-    position: relative;
+    text-decoration: dashed;
     text-align: center;
+}
+
+a:hover ::after{
+    width: 100%;
+    color: antiquewhite;
 }
 
 .box nav a {
-
     color: var(--nav-hover-link-color) ;
+    text-align: inherit;
+    text-decoration: dotted;
     font-family: var(--heading-font);
-    font-size: 1rem;
-    text-align: center ;
+    font-size: 1.5rem;
+    flex-direction: column;
 }
 
-  nav a :hover {
-
-    color: #D643;
-    border: 1px solid #fff;
+.box a:hover{
+    color: aqua;
 }
 
 header nav {
@@ -77,12 +91,17 @@ header nav {
     align-items: center;
     text-decoration: none;
     max-width: 800px;
+    padding: 25px;
+    left: 170px;
 
 
 }
+
 header , footer {
+    margin: 5 auto;
     display: flex;
-    background-color: var(--accent1-color); 
+    background-color: var(--accent1-color);
+    box-shadow: 4px 7px 7px 0px #000; 
     text-align: center;
     flex-direction: column;
     max-width: 2000px;
@@ -96,52 +115,56 @@ footer{
 }
 
 .Card img {
-        width: 300px;
-        margin-bottom: auto;
-        margin-right: 400px;
+        width: 200px;
+        margin-right: 200px;
         margin: auto;
-
-    
+        display: flex;
+        right: 200px;
+        float: right;
+        
 }
 
 .box {
 
-    padding: 25rem ;
+    margin-top: 15px;
+    padding: 10rem ;
     color: var(--accent2-color);
     background-color: #000000;
+    box-shadow: 4px 7px 7px 0px #000;
     border: #000000;
     height: 28rem;
     padding: 2rem;
     border: 1px solid #000000 ;
     position: relative ;
-    width: 30em ;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    text-align: center
+    width: 20em ;
+    
 
 }
 
 
 .Card p {
     
+    font-family: 'Noto sans', sans-serif;
     color: var(--nav-link-color);
     margin-top: 40px;
-    font-size: large;
+    font-size: 1.5rem;
     
 }
 
 .Card h1 {
-    border-bottom: #70F8BA;
-    border-bottom: 1px solid #92DCE5;
+    text-align: center;
+    margin-left: 600px;
 }
 
 .grid {
     display: flex;
     align-items: center;
+    grid-column: (repeat 3, 1f);
 }
 
 main{
     grid-column: 2/3;
+    left: 100px;
     margin: 1rem;
 }
 
@@ -154,15 +177,16 @@ aside a {
     color : #70F8BA
 }
 .Card{
-    padding: 25rem ;
+    padding: 35rem ;
     color: var(--nav-link-color);
     background-color: #000000;
+    box-shadow: 4px 7px 7px 0px #000;
     border: #000000;
     height: 28rem;
     padding: 2rem;
     border: 1px solid #000000 ;
     position: relative ;
-    width: 40em ;
+    width: 50em ;
     text-align: center;
 }
 
@@ -170,18 +194,16 @@ aside a {
     display: flex;
     color: #70F8BA;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 370px;
+    border-bottom: #70F8BA 1px solid 
 }
 
-@media (min-width: 640px) {
+@media (min-width: 740px) {
 
     nav ul {
         display: flex;
         justify-content: space-around;
     
     }
-    
-    nav ul li {
-        flex: 1 1 100%;
-    }
+
 }
