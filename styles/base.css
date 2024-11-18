@@ -156,7 +156,8 @@ footer{
 .grid {
     display: flex;
     align-items: center;
-    grid-column: repeat (3, 1f);
+    grid-column: 2/3;
+    
 }
 
 main{
