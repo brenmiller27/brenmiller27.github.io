@@ -36,9 +36,14 @@ main h2{
     min-height: 70px;
     align-items: center;
     display: flex;
-    padding: 0 24px;
+    padding: 0 24px
+    
 }
 
+a:hover ::before {
+    width: 100%;
+    color: antiquewhite;
+}
 
 li {
     list-style-type: none;
