@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    --primary-color: #9FA2B2 ;
+    --secondary-color: #DBC2CF;
+    --accent1-color: #3C7A89;
+    --accent2-color: #EAC435;
+    --accent3-color: #345995;
+    --accent4-color: #E0CA3C;
+    --accent5-color: #2D3047;
+
+
+
+    --heading-font:'Noto san',serif ;
+    --paragraph-font:'inconsolata',serif ;
+
+    --nav-background-color:#16262E;
+    --nav-link-color:#2E4756;
+    --nav-hover-link-color:#CAFE48;
+    --nav-hover-background-color:#7CB4B8;
+  
+}
+
+body {
+    background-color: var(--accent3-color);
+    color: var(--accent2-color);
+}
+
+h1 {
+    color: var(--accent2-color);
+}
+
+footer {
+    color: var(--accent2-color);
+}
+

@@ -1,3 +1,2 @@
-function buildWC {
-    let 
+function calculateWindchill{
 }
