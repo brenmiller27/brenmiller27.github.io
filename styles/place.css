@@ -93,6 +93,18 @@ header h1{
     text-align: center;
 }
 
+img:hover {
+    filter: grayscale(2);
+    transform: scale(1.03);
+
+
+
+}
+
+img:hover::after {
+    color: #DBC2CF;
+}
+
 .icon{
     max-width: 200px;
     justify-content: center;
