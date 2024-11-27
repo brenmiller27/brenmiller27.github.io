@@ -24,8 +24,6 @@
 
 * {
     box-sizing: border-box;
-    padding: auto;
-    margin: auto;
 }
 
 
@@ -104,6 +102,10 @@ header h1{
 
     footer{
         text-align: center;
+    }
+
+    .hero img {
+        max-width: 600px;
     }
 
 
