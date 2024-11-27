@@ -15,35 +15,45 @@
 </head>
 <body>
     <header>
-        <h1>USA</h1>
+        <h1>United States / USA</h1>
     </header>
     <main>
-        <h1>USA</h1>
-         
         <div class="hero">
             <picture>
-                <source srcset="images/hero-large.webp">
-                <img src="images/hero-large.webp" alt="Elk" width="400" height="200">
+                <img srcset="images/hero-large.webp">
+                <img srcset="images/hero-small.webp">
             </picture>
         </div>
             <div class="data">
                 <h2>Data</h2>
-                <p>Area:</p>
-                <p>Captial:</p>
-                <p>Languages:</p>
-                <p>Currency:</p>
-                <p>Time Zone:</p>
-                <p>Calling Code:</p>
-                <p>internet TLD:</p>
+                <p>Area: 3,809,525 sq miles</p>
+                <p>Captial: Washington DC</p>
+                <p>Languages: English, Spanish</p>
+                <p>Currency: U.S Dollar</p>
+                <p>Time Zone: UTC-8: Standard Time</p>
+                <p>Calling Code: +1</p>
+                <p>internet TLD: .us</p>
 
             </div>
             <div class="weather">
-                <svg>
+                <h2>Today's weather</h2>
+                <ul>
+                    <li>High: 72&deg;</li>
+                    <li>Low: 41&deg</li>
+                    <li>Chance of Precipitation: 45%</li>
+                    <li>Wind: 15mph SE</li>
 
+                    <li>Wind chill: <span
+                     id="windChill"></span>&deg;</li>
+
+                </ul>
+                <svg>
+                  <image src="images/sun-icon.png" alt="sun-icon">
                 </svg>
+            <script src="scripts/place.js"></script>
             </div>
     </main>
- <script src="scripts/place.js"></script>
+ 
  <footer>
     ©2024 🌳 Bren Christopher Miller 🌳 Utah , United States
     <p>This Document was last modified:</p>
