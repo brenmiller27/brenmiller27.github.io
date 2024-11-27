@@ -113,6 +113,8 @@ img:hover::after {
 
 @media(max-width:600px) {
 
+    
+
     footer{
         text-align: center;
     }
