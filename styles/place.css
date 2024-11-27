@@ -98,7 +98,8 @@ header h1{
     justify-content: center;
     margin-left: 530px;
 }
-@media(max-width:600px){
+
+@media(max-width:600px) {
 
     footer{
         text-align: center;
