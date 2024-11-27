@@ -69,9 +69,9 @@ header {
 
 }
 .hero img {
-    max-width: 900px;
-    margin-right: 530px;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 header h1{
@@ -87,11 +87,15 @@ header h1{
     text-align: center;
 }
 
+.icon{
+    max-width: 200px;
+    justify-content: center;
+    margin-left: 530px;
+}
 @media(max-width:600px){
 
     footer{
         text-align: center;
-        margin-left: 100px;
     }
 
 
