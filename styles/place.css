@@ -70,6 +70,21 @@ header, footer {
 
 }
 
+.emoticon img {
+    margin-left: 400px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+
+.emoticon h1 {
+
+    top: 50px;
+}
+
 header {
     width: auto;
     padding: 25px;
@@ -115,13 +130,9 @@ img:hover::after {
 
 @media(max-width:600px) {
 
-
-    img {
-        width: 100%;
-        max-width: 300px;
+    .emoticon {
+        display: none;
     }
-
-    
     svg {
         display: block;
     }
