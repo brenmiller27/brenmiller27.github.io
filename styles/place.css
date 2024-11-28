@@ -6,7 +6,7 @@
     --secondary-color: #DBC2CF;
     --accent1-color: #3C7A89;
     --accent2-color: #ffff;
-    --accent3-color: #345995;
+    --accent3-color: black;
     --accent4-color: #E0CA3C;
     --accent5-color: #2D3047;
 
@@ -33,14 +33,15 @@ body {
     
 }
 
-main{
-    background-image: url('images')
+ul {
+    list-style-type: none;
 }
 
 .weather {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     align-items: center;
+    color: black;
 }
 .data {
     background-color: var(--accent3-color);
@@ -52,7 +53,7 @@ main{
 }
 
 h1, footer {
-    color: red;
+    color: white;
     font-family: 'Noto sans', sans-serif;
     font-size: large;
 
@@ -77,14 +78,11 @@ header {
 .hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    width: 300px;
 }
 
-header h1{
-    background-color: var(--primary-color);
-}
 .hero  {
-    max-width: 300px;
+    max-width: 500px;
     align-items: center;
     justify-content: center;
     margin-left: 400px;
@@ -116,6 +114,12 @@ img:hover::after {
 }
 
 @media(max-width:600px) {
+
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
 
     
     svg {
