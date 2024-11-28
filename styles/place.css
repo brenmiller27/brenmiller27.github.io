@@ -5,7 +5,7 @@
     --primary-color: #9FA2B2 ;
     --secondary-color: #DBC2CF;
     --accent1-color: #3C7A89;
-    --accent2-color: #EAC435;
+    --accent2-color: #ffff;
     --accent3-color: #345995;
     --accent4-color: #E0CA3C;
     --accent5-color: #2D3047;
@@ -43,7 +43,7 @@ main{
     align-items: center;
 }
 .data {
-    background-color: navy;
+    background-color: var(--accent3-color);
     min-width: 90px;
     text-align: center;
     font-family: 'Noto sans', sans-serif;
@@ -63,7 +63,7 @@ main h1 {
 }
 
 header, footer {
-    background-color: navy ;
+    background-color: var(--accent3-color) ;
     text-align: center;
     padding: 20px;
 
@@ -81,7 +81,7 @@ header {
 }
 
 header h1{
-    background-color: #7CB4B8;
+    background-color: var(--primary-color);
 }
 .hero  {
     max-width: 300px;
@@ -98,7 +98,11 @@ img:hover {
     transform: scale(1.03);
 
 
+}
 
+svg {
+    display: none;
+    cursor: pointer;
 }
 
 img:hover::after {
@@ -114,6 +118,11 @@ img:hover::after {
 @media(max-width:600px) {
 
     
+    svg {
+        display: block;
+    }
+
+
 
     footer{
         text-align: center;
