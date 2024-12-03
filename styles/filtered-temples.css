@@ -105,6 +105,7 @@ footer {
 
     .nav-menu{
         position: fixed;
+        display: flex;
         top:55px;
         Left: -100%;
         gap: 0;
@@ -116,13 +117,22 @@ footer {
     }
 
 
-
+    
+    main{
+        max-width: 1200px;
+        margin: auto;
+    }
     .nav-item {
         margin: 16px 0;
     }
 
     .nav-menu.active {
         Left: 0;
+    }
+
+    .temple-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
 }

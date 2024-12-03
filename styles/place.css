@@ -23,10 +23,10 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-
 
 body {
     color: var(--accent2-color);
@@ -42,6 +42,9 @@ ul {
     font-family: 'Noto Sans', sans-serif;
     align-items: center;
     color: black;
+    padding: 1rem;
+
+
 }
 .data {
     background-color: var(--accent3-color);
@@ -59,6 +62,18 @@ h1, footer {
 
 }
 
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.weather{
+    padding: 1rem;
+    float: right;
+    align-items: center;
+
+}
+
 main h1 {
     font-size: 2rem;
 }
@@ -67,17 +82,45 @@ header, footer {
     background-color: var(--accent3-color) ;
     text-align: center;
     padding: 20px;
-
-}
-
-.emoticon img {
-    margin-left: 400px;
     align-items: center;
-    justify-content: center;
+    padding: 25px;
 
-    
 }
 
+.weather-icon {
+    width: 40px;
+}
+
+.weather-details{
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+body {
+    font-family: "Noto sans", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.data {
+    padding: 1rem;
+}
+
+ul {
+    padding: 7px;
+}
+
+ul li{
+    padding: 3px;
+    list-style-type: none;
+}
+
+img {
+    width: 800px;
+    height:auto;
+    position: relative;
+}
 
 
 .emoticon h1 {
@@ -85,22 +128,22 @@ header, footer {
     top: 50px;
 }
 
-header {
-    width: auto;
-    padding: 25px;
-
-}
 .hero img {
+    position: relative;
+    text-align: center;
+    left: 200px;
     width: 100%;
     height: 100%;
     width: 300px;
 }
-
+.grid {
+    justify-content: space-between;
+    gap: 60px;
+}
 .hero  {
-    max-width: 500px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 400px;
+    text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
 }
 .hero h1 {
     text-align: center;
@@ -112,8 +155,19 @@ img:hover {
 
 
 }
+img {
+    height: auto;
+    position: relative;
+}
+footer{
+    
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
 
-svg {
+.icon-2{
     display: none;
     cursor: pointer;
 }
@@ -122,31 +176,29 @@ img:hover::after {
     color: #DBC2CF;
 }
 
-.icon{
-    max-width: 200px;
-    justify-content: center;
-    margin-left: 530px;
-}
 
-@media(max-width:600px) {
+@media (max-width:767px) {
 
-    .emoticon {
-        display: none;
-    }
-    svg {
-        display: block;
-    }
+   .weather-details {
+    flex-direction: column;
+   }
 
+   img {
+    width: 90%;
+   }
 
+   .grid{
+    flex-direction: column;
+   }
 
-    footer{
-        text-align: center;
-    }
+   .icon-2 {
+    width: 150px;
+    display: block;
+    margin-left: 30px;
+   }
 
-    .hero img {
-        max-width: 800px;
-    }
-
-
+   .weather-icon{
+    display: none;
+   }
     
 }
