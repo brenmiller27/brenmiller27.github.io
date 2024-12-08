@@ -73,14 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
         },
-        {
-        templeName: "Philadelphia, Pennslyvannia",
-        location: "Philadelphia, Pennslyvannia",
-        dedicated: "2016, September, 18",
-        area: 116642,
-        imageUrl:
-        "https://churchofjesuschristtemples.org/philadelphia-pennsylvania-temple/philadelphia-pennslyvannia-outdoors"
-        }
+       
     ];
 
     const templeContainer = document.getElementById("templeContainer");
@@ -108,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             area.textContent= `Total area: ${temple.area} sq ft`;
             card.appendChild(area);
 
-            const image = document.createElement('img');
+            const image = document.createElement("img");
             image.src = temple.imageUrl;
             image.alt = temple.templeName;
             image.loading= 'lazy';
@@ -145,13 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
             displayTemples(filteredTemples);
     };
 
-    document.querySelector('nav').addEventListener("click", (event) => {
-            
+    document.querySelector('nav').addEventListener("click", (event) => {   
         event.preventDefault();
             
             const filter = event.target.textContent.toLowerCase().trim();
 
-            switch(filter) {
+            switch (filter) {
                 case 'old':
                     filterBYOldTemples();
                     break;
@@ -161,20 +153,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "large":
                     filterByLargeTemples();
                     break;
-                
                 case "small":
                     filterBySmallTemples();
                     break;
                 case "home":
-                    displayTemples();
+                    displayTemples(temples);
                     break;
-                default:
+                  default:
                     break;
 
             }
         });
         displayTemples(temples);
-      });
+    });
 
 
 
