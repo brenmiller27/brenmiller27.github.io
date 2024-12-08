@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bren Miller Form Site</title>
+    <meta name="description" content="Bren Miller form site plan">
+    <meta name="author" content="Bren Miller">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/form.css">
+
+</head>
+<body>
+    <header>
+        <h1>
+            Product Review form | Bren Miller
+        </h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a product</option>
+            </select>
+
+        </form>
+
+    </main>
+    <footer>
+        <span id="currentyear"></span>
+        ©2024 🌳 Bren Christopher Miller 🌳 Utah , United States
+        <p>This Document was last modified:</p>
+        <script src="scripts/getdates.js"></script>
+    </footer> 
+</body>
+</html>
