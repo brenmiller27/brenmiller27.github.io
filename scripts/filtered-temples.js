@@ -114,7 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const filterBYOldTemples = () => {
         const filteredTemples = temples.filter(
-                (temple) => new Date(temple.dedicated).getFullYear() < 1900);
+                (temple) => new Date(temple.dedicated).getFullYear() < 1900
+            );
 
         displayTemples(filteredTemples);
     };
@@ -163,9 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
             }
-        });
-        displayTemples(temples);
     });
+        displayTemples(temples);
+});
 
 
 
