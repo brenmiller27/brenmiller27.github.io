@@ -73,103 +73,119 @@ document.addEventListener("DOMContentLoaded", () => {
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
         },
+
+        {
+            templeName: "São Paulo Brazil Temple",
+            location: "São Paulo, Brazil",
+            dedicated: "1978, October, 30",
+            area: 59246,
+            imageUrl:
+              "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/1280x800/sao-paulo-brazil-temple-lds-187030-wallpaper.jpg",
+        },
+        {
+            templeName: "Lisbon Portugal Temple",
+            location: "Lisbon, Portugal",
+            dedicated: "2019, September, 15",
+            area: 23730,
+            imageUrl:
+              "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lisbon-portugal/800x500/03-045a97e8471a9f581e927698521a1d184f4b3753.jpeg",
+        },
+        {
+            templeName: "Praia Cape Verde Temple",
+            location: "Praia, Santiago, Cape Verde",
+            dedicated: "2022, June, 19",
+            area: 8759,
+            imageUrl:
+              "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/praia-cape-verde/800x500/praia_cape_verde_temple-main.jpeg",
+        },
        
     ];
 
     const templeContainer = document.getElementById("templeContainer");
 
     const displayTemples = (templesArray) => {
-        templeContainer.innerHTML = "";
-
-        templesArray.forEach((temple) => {
-            const card = document.createElement('div');
-            card.className="temple-card";
-
-            const name = document.createElement('h1');
-            name.textContent = temple.templeName;
-            card.appendChild(name);
-
-            const location = document.createElement('p');
-            location.textContent = `Location: ${temple.location}`;
-            card.appendChild(location);
-
-            const dedicated = document.createElement('p');
-            dedication.textContent = `Dedicated: ${temple.dedicated}`;
-            dedication.appendChild(dedicated)
-
-            const area = document.createElement('p');
-            area.textContent= `Total area: ${temple.area} sq ft`;
-            card.appendChild(area);
-
-            const image = document.createElement("img");
-            image.src = temple.imageUrl;
-            image.alt = temple.templeName;
-            image.loading= 'lazy';
-            card.appendChild(image);
-            
-            templeContainer.appendChild(card);
-        });
-
+      templeContainer.innerHTML = "";
+  
+      templesArray.forEach((temple) => {
+        const card = document.createElement("div");
+        card.className = "temple-card";
+  
+        const name = document.createElement("h1");
+        name.textContent = temple.templeName;
+        card.appendChild(name);
+  
+        const location = document.createElement("p");
+        location.textContent = `Location: ${temple.location}`;
+        card.appendChild(location);
+  
+        const dedicated = document.createElement("p");
+        dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+        card.appendChild(dedicated);
+  
+        const area = document.createElement("p");
+        area.textContent = `Total Area: ${temple.area} sq ft`;
+        card.appendChild(area);
+  
+        const image = document.createElement("img");
+        image.src = temple.imageUrl;
+        image.alt = temple.templeName;
+        image.loading = "lazy";
+        card.appendChild(image);
+  
+        templeContainer.appendChild(card);
+      });
     };
-
-    const filterBYOldTemples = () => {
-        const filteredTemples = temples.filter(
-                (temple) => new Date(temple.dedicated).getFullYear() < 1900
-            );
-
-        displayTemples(filteredTemples);
+  
+    const filterByOldTemples = () => {
+      const filteredTemples = temples.filter(
+        (temple) => new Date(temple.dedicated).getFullYear() < 1900
+      );
+      displayTemples(filteredTemples);
     };
-
+  
     const filterByNewTemples = () => {
-        const filteredTemples = temples.filter(
-                (temple) => new Date(temple.dedicated).getFullYear() > 2000
-            );
-
-        displayTemples(filteredTemples);
-
+      const filteredTemples = temples.filter(
+        (temple) => new Date(temple.dedicated).getFullYear() > 2000
+      );
+      displayTemples(filteredTemples);
     };
-
+  
     const filterByLargeTemples = () => {
-            const filteredTemples = temples.filter((temple) => temple.area > 90000);
-            displayTemples(filteredTemples);
+      const filteredTemples = temples.filter((temple) => temple.area > 90000);
+      displayTemples(filteredTemples);
     };
-
+  
     const filterBySmallTemples = () => {
-            const filteredTemples = temples.filter((temple) => temple.area < 10000);
-            displayTemples(filteredTemples);
+      const filteredTemples = temples.filter((temple) => temple.area < 10000);
+      displayTemples(filteredTemples);
     };
-
-    document.querySelector('nav').addEventListener("click", (event) => {   
-        event.preventDefault();
-            
-            const filter = event.target.textContent.toLowerCase().trim();
-
-            switch (filter) {
-                case 'old':
-                    filterBYOldTemples();
-                    break;
-                case  "new":
-                    filterByNewTemples();
-                    break;
-                case "large":
-                    filterByLargeTemples();
-                    break;
-                case "small":
-                    filterBySmallTemples();
-                    break;
-                case "home":
-                    displayTemples(temples);
-                    break;
-                  default:
-                    break;
-
-            }
+  
+    document.querySelector("nav").addEventListener("click", (event) => {
+      event.preventDefault();
+  
+      const filter = event.target.textContent.toLowerCase().trim();
+  
+      switch (filter) {
+        case "old":
+          filterByOldTemples();
+          break;
+        case "new":
+          filterByNewTemples();
+          break;
+        case "large":
+          filterByLargeTemples();
+          break;
+        case "small":
+          filterBySmallTemples();
+          break;
+        case "home":
+          displayTemples(temples);
+          break;
+        default:
+          break;
+      }
     });
-        displayTemples(temples);
-});
+    displayTemples(temples);
+   });
 
-
-
-    
-
-    
+   
