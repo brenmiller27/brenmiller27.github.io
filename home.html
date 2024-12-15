@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bren Miller | Wdd131 - Travel Home page</title>
+    <meta name="description" content="Temple picture album assignment">
+    <meta name="author" content="Bren Miller">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/travel.css">
+    <link rel="stylesheet" href="styles/Travel-larger.css">
+    <script defer src="scripts/travel.js"></script>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <h1>Travel log media</h1>
+            <ul class="nav-menu">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="Trips.html" class="nav-link">Trips</a>
+                    </li>
+            </ul>
+            <label></label>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <main class="main">
+            <section class="home_section" id="home">
+                <img src="images/Elk.jpg" alt="" class="home__bg">
+                <div class="home_shadow"></div>
+
+                <div class="home_container container grid">
+                    <div class="home__data">
+                        <h3 class="home__subtitle">Welcome to Travel Log media</h3>
     
+                        <h1 class="home__title">
+                            Explore<br>
+                            The World
+                        </h1>
+    
+                        <p class="home__description">
+                            Relive countless experiences as you discover islands,
+                            paradises, mountain getaways, and much more.<br>
+                            Book your trips today!
+                        </p>
+    
+                        <a href="Trips.html" class="button">
+                            Star your Journey Today <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <br>
+                        <div class="home_cards grid">
+                            <article class="home_card">
+                                <img src="images/Bali-trips.webp" alt="Bali" class="home_card-img">
+                                <h3 class="home_card_title">Bali</h3>
+                                <div class="home_card_shadow"></div>
+                            </article>
+                            <article class="home_card">
+                                <img src="images/Santo-domingo-trips.webp" alt="santo-domingo" class="home_card-img">
+                                <h3 class="home_card_title">Santo Domingo</h3>
+                                <div class="home_card_shadow"></div>
+                            </article>
+                            <article class="home_card">
+                                <img src="images/.webp" alt="Alaska" class="home_card-img">
+                                <h3 class="home_card_title">Alaska</h3>
+                                <div class="home_card_shadow"></div>
+                            </article>
+                            <article class="home_card">
+                                <img src="images/Bali-trips.webp" alt="Bali" class="home_card-img">
+                                <h3 class="home_card_tilte">Italy</h3>
+                                <div class="home_card_shadow"></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </header>
+    <footer>
+        <span id="currentyear"></span>
+        ©2024 🌳 Bren Christopher Miller 🌳 Utah , United States
+        <p>This Document was last modified:</p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
 </body>
 </html>

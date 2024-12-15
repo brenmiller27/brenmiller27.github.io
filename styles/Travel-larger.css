@@ -1,0 +1,44 @@
+
+@media screen and (max-width:600px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        display: flex;
+        top:55px;
+        Left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        Left: 0;
+    }
+
+
+}
