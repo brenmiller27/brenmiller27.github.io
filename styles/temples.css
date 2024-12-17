@@ -97,7 +97,9 @@ footer {
     cursor: pointer;
 }
 
-
+.home__title {
+    text-align: center;
+}
 .bar {
     display: block;
     width: 35px;
