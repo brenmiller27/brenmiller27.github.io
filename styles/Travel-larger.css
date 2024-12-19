@@ -86,21 +86,13 @@ input[type="submit"]:hover{
 
     }
 
-    .header {
-        justify-content: center;
-        margin-right: 300px;
-    }
 
     main{
         max-width: 1200px;
         margin: auto;
     }
 
-    .nav__list {
-        text-align: center;
-        flex-direction: column;
-        row-gap: 2.5rem;
-    }
+
     .nav-item {
         margin: 16px 0;
     }
