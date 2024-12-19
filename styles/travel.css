@@ -155,7 +155,7 @@ table {
     display: grid;
     text-align: center;
     width: 70%;
-    margin-left: 200px;
+    margin-left: 300px;
     font-weight: bold;
     justify-content: space-between;
     width: 500px;
@@ -164,8 +164,8 @@ table {
 
 .table h2 {
     text-align: center;
-    margin-left: 120px;
     margin-bottom: 50px;
+    right: 170px;
 }
 
 
@@ -289,9 +289,6 @@ footer{
 }
 
 
-.nav-link a {
-    text-decoration: none;
-}
 
 .nav-link:hover {
     color: darkorange;
