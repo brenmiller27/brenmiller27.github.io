@@ -328,10 +328,6 @@ a:hover ::before {
     padding-block: 5rem 1rem;
 }
 
-.footer__socials{
-    color: #fff;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
