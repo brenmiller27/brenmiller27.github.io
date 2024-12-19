@@ -1,22 +1,4 @@
 
-::-webkit-scrollbar {
-    width: .6rem;
-    border-radius: .5rem;
-    background-color: hsl(0, 0%, 10%);
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: .5rem;
-    background-color: hsl(0, 0%, 20%);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(0, 0%, 30%);
-}
-
-.show-scroll {
-    bottom: 3rem;
-}
 
 form {
     max-width: 600px;
@@ -60,25 +42,6 @@ input[type="submit"]:hover{
 }
 
 
-.scrollup {
-    position: fixed;
-    right: 1rem;
-    bottom: -50%;
-    background-color: hsla(0, 0%, 100%, .1);
-    padding: 6px;
-    display: inline-flex;
-    color: #fff;
-    font-size: large;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    z-index: 1;
-    transition: bottom .4s , transform .4s;
-}
-
-.scrollup:hover {
-    transform: translateY(-.25rem);
-}
-
 
 @media screen and (max-width:768px) {
 
@@ -104,8 +67,6 @@ input[type="submit"]:hover{
     .nav-bar {
         justify-content: center;
     }
-
-    
 
     
     .nav-menu{
